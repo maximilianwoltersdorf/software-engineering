@@ -5,3 +5,42 @@
  *= require_self
  *= require_tree . 
 */
+
+body{
+     margin:0;
+}
+
+#nav_top_area{
+    background-color: #2D2D2D;
+    height: 30px;
+}
+#nav_top_area ul{
+    padding-top: 3px;
+    margin-top:0;
+    list-style-type: none;
+    margin-left: 100px;
+}
+#nav_top_area ul li{
+    display:inline-block;
+    margin-right: 20px;
+}
+#nav_top_area a{
+    color: white;
+    text-decoration: none;
+}
+#nav_top_area a:hover{
+    color: grey;
+}
+#friend_finder{
+    font-weight: bold;
+    font-size: 120%;
+}
+
+#index_title{
+    color: grey;
+    margin-left: 80px;
+}
+#index-title p{
+    font-style: italic;
+}
+
