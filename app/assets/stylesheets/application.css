@@ -8,7 +8,7 @@
 
 body{
      margin:0;
-     width:800px;
+     width:100%
 
 }
 body h1{
@@ -54,8 +54,8 @@ body h1{
 #profile_left{
     float:left;
     border-right: 4px solid #66AAE0;
-    border-bottom: 4px solid #66AAE0;
-    border-bottom-right-radius: 10% 5%;
+   /* border-bottom: 4px solid #66AAE0;
+    border-bottom-right-radius: 10% 5%; */
     width: 250px;
     height: 500px;
 }
