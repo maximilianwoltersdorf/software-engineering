@@ -6,8 +6,12 @@
  
 </head>
 <body>
-  <%= render 'layouts/navitop' %>
-  <%= yield %>
+		
+		fb_auth = FbGraph::Auth.new(280822525282026, ec11c6fcb8459f52b9e4c2640116443d)
+		fb_auth.client # => Rack::OAuth2::Client
+  		<%= render 'layouts/navitop' %>
+  		<%= render 'layouts/profile_left' %>
+  		<%= yield %>
 
 </body>
 </html>
