@@ -53,9 +53,11 @@ body h1{
     background-color: #79B7E7;
     float:left;
     border-right: 4px solid #66AAE0;
-    margin-left: 20px;
     width: 250px;
     height: 500px;
+}
+#prifle_left p{
+    margin-left: 20px;
 }
 
 #content_pages{
