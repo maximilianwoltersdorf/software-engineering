@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   
   def index
 		current_facebook_user.fetch
-		@interest = current_facebook_user
+		@fbuser = current_facebook_user
   end
   
 end
