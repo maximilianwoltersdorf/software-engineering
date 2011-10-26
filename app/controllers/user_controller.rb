@@ -13,7 +13,7 @@ class UserController < ApplicationController
 	def create
 		@user = User.new
 		@user.name = current_facebook_user.name
-		session[:user_name] = current_facebook_user.name
+		session[:user_name] = @user
 
 		if @user.save
 			redirect_to root_path
