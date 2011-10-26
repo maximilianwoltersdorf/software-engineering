@@ -4,7 +4,7 @@ gem 'rails', '3.1.0'
 
 gem 'pg'
 gem 'facebooker2'
-
+gem 'libsqlite3-0'
 
 
 group :assets do
