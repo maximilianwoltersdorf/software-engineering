@@ -11,8 +11,7 @@ class UserController < ApplicationController
 	end
 
 	def create
-		@user = User.new
-		@user.name = current_facebook_user.name
+		@user = User.create(:name => current_facebook_user.name)
 		session[:user_name] = @user
 
 		if @user.save
