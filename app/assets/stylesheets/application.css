@@ -50,6 +50,7 @@ body h1{
 }
 
 #profile_left{
+    background-color: #79B7E7;
     float:left;
     border-right: 4px solid #66AAE0;
     margin-left: 20px;
