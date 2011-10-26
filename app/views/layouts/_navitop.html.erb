@@ -1,12 +1,8 @@
 <div id = 'nav_top_area'>
   <ul>
-      <li><div id='title'><%= link_to "dategame", root_path %></div></li>
+      <li><div id='title'><%= link_to "Regeln", about_path %></div></li>
       <li> | </li>
-      <li><%= link_to "Regeln", about_path %></li>
-      <%= if session[user_name] == current_facebook_user.name %>
-      <li> | </li>
-      <li><%= link_to "Spielen", root_path %> </li>
-      <% end %>
+      <li><%= link_to "Spielen", root_path %></li>
   </ul>
 </div>
 
