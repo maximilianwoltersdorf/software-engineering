@@ -5,7 +5,7 @@ class UserController < ApplicationController
 			session[:user_name] = current_facebook_user.name
 			redirect_to root_path
 		else
-			redirect_to 'user/create'
+			redirect_to '/user/create'
 
 		end
 	end
