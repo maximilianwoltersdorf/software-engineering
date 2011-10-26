@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  gender: MyString
   birthday: 2011-10-26
+  gender: MyString
   email: MyString
 
 two:
   name: MyString
-  gender: MyString
   birthday: 2011-10-26
+  gender: MyString
   email: MyString
