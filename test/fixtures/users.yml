@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyText
-  id: 1
+  name: MyString
+  gender: MyString
+  birthday: 2011-10-26
+  email: MyString
 
 two:
-  name: MyText
-  id: 1
+  name: MyString
+  gender: MyString
+  birthday: 2011-10-26
+  email: MyString
