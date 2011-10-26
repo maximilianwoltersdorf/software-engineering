@@ -1,8 +1,8 @@
 class UserController < ApplicationController
 	
 	def new
-		if User.find_by_name(current_facebook_user.name)
-			session[:user_name] = current_facebook_user.name
+		if User.where(:name =>current_facebook_user.name) != nil
+			session[:user] = User.where(:name =>current_facebook_user.name)
 			redirect_to root_path
 		else
 			redirect_to '/user/create'
