@@ -1,7 +1,6 @@
 class UserController < ApplicationController
 	
 	def new
-		current_facebook_user.fetch
 		if User.find_by_name(current_facebook_user.name) != nil
 			session[:user_name] = User.find_by_name(current_facebook_user.name).name
 			redirect_to root_path
