@@ -1,5 +1,7 @@
 <div id = "profile_left">
 <p>
-Your profile:
+<h1>my Profile </h1>
+<%= current_facebook_user.name %>
+<%= image_tag("http://graph.facebook.com/#{current_facebook_user.id}/picture", :size=> "60x60")%>
 <p>
 </div>
