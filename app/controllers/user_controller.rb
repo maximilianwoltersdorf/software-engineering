@@ -7,6 +7,7 @@ class UserController < ApplicationController
 			redirect_to root_path
 		else
 			@user = User.create(:name => current_facebook_user.name)
+			cookies.permanent[:user_name] = @user.id
 			session[:user_name] = @user
 			redirect_to root_path
 
