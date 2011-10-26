@@ -9,7 +9,7 @@ def fb_permission_check
 	
 	begin
 		current_facebook_user.fetch
-		if session[:user].name == current_facebook_user.name
+		if session[:user_name].name == current_facebook_user.name
 
 		else
 		redirect_to '/user/new'
