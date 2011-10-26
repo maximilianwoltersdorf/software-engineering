@@ -1,9 +1,10 @@
 SoftwareProject::Application.routes.draw do
   
-  root :to => 'pages#index'
-  match 'about' => 'pages#about'
+  root :to            => 'pages#index'
+  match 'about'       => 'pages#about'
 
-  match 'user/new' => 'user#new'
+  match 'user/new'    => 'user#new'
+  match 'user/create' => 'user#create'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
