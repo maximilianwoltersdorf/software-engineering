@@ -12,10 +12,19 @@ class UserController < ApplicationController
 								:email => current_facebook_user.email)
 			cookies.permanent[:user_name] = @user.name
 			session[:user_name] = @user.name
-			redirect_to root_path
+			redirect_to '/user/create'
 		end
 	rescue 
 	end
+	end
+
+	def create	
+		current_facebook_user.likes.each do |item|
+			Like.create(:group => item,
+						:count => "0")
+		end
+		redirect_to root_path
+
 	end
 
 
