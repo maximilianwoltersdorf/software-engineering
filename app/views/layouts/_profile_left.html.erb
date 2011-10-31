@@ -17,4 +17,8 @@
 			<% end %>
 		</p>
 	</div>
+
+	Games Played: 
+	<%= Game.where("user_name ==" current_facebook_user.name).count %>
+
 </div>

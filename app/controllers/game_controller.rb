@@ -16,8 +16,8 @@ class GameController < ApplicationController
 
   def create
   	Game.create(:chosen => params[:chosen],
-  				:not_chosen => params[:unchosen]
-  	)
+  				:not_chosen => params[:unchosen],
+          :user_name => current_facebook_user.name)
 
   	@like = Like.find_by_group(params[:chosen])
   	@like.count +=1
