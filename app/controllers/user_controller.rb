@@ -15,12 +15,12 @@ class UserController < ApplicationController
 			session[:user_name] = @user.name
 			redirect_to '/user/create'
 		end
-	rescue 
+	rescue
+	print "Fehler" 
 	end
 	end
 
 	def create
-		current_facebook_user.fetch	
 		current_facebook_user.likes.each do |item|
 			Like.create(:group => item.name,
 						:count => "0")
