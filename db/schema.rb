@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111031095528) do
+ActiveRecord::Schema.define(:version => 20111031111652) do
 
   create_table "likes", :force => true do |t|
     t.text     "group"
