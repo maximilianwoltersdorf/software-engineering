@@ -3,7 +3,7 @@
 		<p>
 		<h1><i>my Profile </i></h1>
 			<% if session[:user_name] %>
-				<%= current_facebook_user.fetch %>
+				<% current_facebook_user.fetch %>
 				<%= current_facebook_user.name %><br/>
 				<%= current_facebook_user.email %><br/>
 				<%= current_facebook_user.gender %><br/>
