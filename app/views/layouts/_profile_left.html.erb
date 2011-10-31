@@ -21,7 +21,7 @@
 	Games Played: 
 	<% @played_games = Game.find_by_user_name(current_facebook_user.name) %>
 	<% if @played_games != nil %>
-	<%= @played_games.count %>
+	<%= @played_games.size %>
 	<% else %>
 	<%= 0 %>
 	<% end %>
