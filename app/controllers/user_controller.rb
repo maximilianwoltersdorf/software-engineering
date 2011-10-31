@@ -19,7 +19,8 @@ class UserController < ApplicationController
 	end
 	end
 
-	def create	
+	def create
+		current_facebook_user.fetch	
 		current_facebook_user.likes.each do |item|
 			Like.create(:group => item.name,
 						:count => "0")
