@@ -68,6 +68,7 @@ body h1{
  margin-left:290px;
 }
 #content_pages a{
+    font-weight:bold;
     text-decoration: none;
     color: #DD5454;
 }
