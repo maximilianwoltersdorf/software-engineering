@@ -8,7 +8,12 @@ Zwei Random Dinger: <br/>
       <option><%= @like2.group %></option>
 	</select>
 
-	<%= form.radio_button :ending, “true”, :checked => true %>
+	<label for="theme">Theme:</label>
+    	<% [@like1.group, @like2.group].each do |theme| %>
+      <br><%= radio_button_tag 'theme', theme, @theme == theme %>
+      <%= theme.humanize %>
+    <% end %>
+
 
 </div>
 
