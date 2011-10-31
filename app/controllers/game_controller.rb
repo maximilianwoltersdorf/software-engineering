@@ -1,7 +1,7 @@
 class GameController < ApplicationController
 	require 'mogli'
   def index
-  
+  Like.random
 
   end
 
