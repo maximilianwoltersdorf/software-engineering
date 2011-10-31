@@ -9,12 +9,14 @@ Zwei Random Dinger: <br/>
 </p>
 
 <%= @likes.each do |item| %>
-<%= puts item.group %>
-<%= print "\n" %>
-<%= puts item.count %>
-<%= print "\n" %>
-<% end %>
+<table>
+<tr>
+<td><%= puts item.group %></td>
+<td><%= puts item.count %></td>
+</tr>
 
+<% end %>
+</table>
 </div>
 
 
