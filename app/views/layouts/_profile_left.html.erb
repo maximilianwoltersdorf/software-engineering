@@ -19,6 +19,10 @@
 	</div>
 
 	Games Played: 
-	<%= Game.find_by_user_name(current_facebook_user.name).count %>
+	<% @played_games = Game.find_by_user_name(current_facebook_user.name) %>
+	<% if @played_games != nil %>
+	<%= @played_games.count %>
+	<% else %>
+	<%= 0 %>
 
 </div>
