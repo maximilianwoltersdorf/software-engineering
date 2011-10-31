@@ -19,6 +19,6 @@
 	</div>
 
 	Games Played: 
-	<%= Game.where("user_name ==" current_facebook_user.name).count %>
+	<%= Game.find_by_user_name(current_facebook_user.name).count %>
 
 </div>
