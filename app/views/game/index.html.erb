@@ -2,11 +2,13 @@
 
 <h1>dateGame</h1>
 
-Zwei Random Dinger: <br/>
+Was ist besser?  <br/>
 <p>
+<div id = "game_links">
 	<%= link_to @like1.group, game_create_path(:chosen => @like1.group, :unchosen => @like2.group) %> << >>
 	<%= link_to @like2.group, game_create_path(:chosen => @like2.group, :unchosen => @like1.group) %> <br/>
-	<%= link_to "Skip", '/game/index' %>
+	<%= link_to "Skip", '/game/create' %>
+</div>
 </p>
 
 <table>

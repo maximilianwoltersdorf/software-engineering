@@ -15,6 +15,7 @@ class GameController < ApplicationController
   end
 
   def create
+
     current_facebook_user.fetch
   	Game.create(:chosen => params[:chosen],
   				:not_chosen => params[:unchosen],
