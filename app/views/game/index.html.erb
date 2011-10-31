@@ -3,8 +3,8 @@
 <h1>dateGame</h1>
 
 Zwei Random Dinger: <br/>
-	<%= link_to @like1.group, '/game/create', params[:chosen] => @like1.group, params[:unchosen] => @like2.group %>
-	<%= link_to @like2.group, '/game/create', params[:chosen] => @like2.group, params[:unchosen] => @like1.group %>
+	<%= link_to @like1.group, '/game/create', :chosen => @like1.group, :unchosen => @like2.group %>
+	<%= link_to @like2.group, '/game/create', :chosen => @like2.group, :unchosen => @like1.group %>
 	
 
   
