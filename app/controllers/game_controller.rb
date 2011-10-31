@@ -8,6 +8,7 @@ class GameController < ApplicationController
 			@like2 = Like.find(1+rand(size-1))
 		end
 
+    @likes = Like.where("count =! 0").order("count DESC")
   end
 
   def new
