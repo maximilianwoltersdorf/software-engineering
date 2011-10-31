@@ -18,7 +18,7 @@ class GameController < ApplicationController
   				:not_chosen => params[:unchosen]
   	)
 
-  	@like = Like.find_by_name(params[:chosen])
+  	@like = Like.find_by_group(params[:chosen])
   	@like.count + 1
   	if @like.save
   		redirect_to '/game/index'
