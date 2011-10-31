@@ -1,5 +1,5 @@
 class UserController < ApplicationController
-	
+	require 'mogli'
 	def new
 	begin current_facebook_user.fetch
 		if User.find_by_name(current_facebook_user.name) != nil
