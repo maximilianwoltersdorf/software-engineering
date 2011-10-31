@@ -1,5 +1,11 @@
 SoftwareProject::Application.routes.draw do
   
+  get "game/index"
+
+  get "game/new"
+
+  get "game/create"
+
   root :to            => 'pages#index'
   match 'about'       => 'pages#about'
 
