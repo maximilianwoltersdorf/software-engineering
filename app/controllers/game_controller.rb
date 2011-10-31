@@ -19,7 +19,7 @@ class GameController < ApplicationController
   	)
 
   	@like = Like.find_by_group(params[:chosen])
-  	@like.count + 1
+  	@like.count =+1
   	if @like.save
   		redirect_to '/game/index'
   	end
