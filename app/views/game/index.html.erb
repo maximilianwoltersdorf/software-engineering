@@ -3,17 +3,11 @@
 <h1>dateGame</h1>
 
 Zwei Random Dinger: <br/>
-	<select name="likecb" size="3">
-      <option><%= @like1.group %></option>
-      <option><%= @like2.group %></option>
-	</select>
+	<%= link_to @like1.group, '/game/create', :chosen => @like1.group, :unchosen => @like2.group %>
+	<%= link_to @like2.group, '/game/create', :chosen => @like2.group, :unchosen => @like1.group %>
+	
 
-	<label for="theme">Theme:</label>
-    	<% [@like1.group, @like2.group].each do |theme| %>
-      <br><%= radio_button_tag 'theme', theme, @theme == theme %>
-      <%= theme.humanize %>
-    <% end %>
-
+  
 
 </div>
 

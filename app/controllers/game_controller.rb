@@ -14,6 +14,15 @@ class GameController < ApplicationController
   end
 
   def create
+  	Game.create(:chosen => params[:chosen],
+  				:not_chosen => params[:unchosen]
+  	)
+
+  	@like = Like.find_by_name(params[:chosen])
+  	@like.count + 1
+  	if @like.save
+  		redirect_to '/game/index'
+  	end
   end
 
 end
