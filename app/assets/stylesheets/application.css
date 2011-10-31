@@ -70,10 +70,10 @@ body h1{
 .margin-left{
     margin-left: 20px;
 }
-.game_links a{
+#game_links a{
     text-decoration: none;
     color: #DD5454;
 }
-.game_links a:hover{
+#game_links a:hover{
     text-decoration: underline;
 }
