@@ -1,10 +1,12 @@
 class GameController < ApplicationController
 	require 'mogli'
   def index
-  	Like.random
-  #size = Like.all.count
-  #@like1 = Like.find(1+rand(size))
-  #@like2 = Like.find(1+rand(size))
+  	size = Like.count
+		@like1 = Like.find(1+rand(size-1))
+		@like2 = Like.find(1+rand(size-1))
+		if @like1 == @like2
+			@like2 = Like.find(1+rand(size-1))
+		end
 
   end
 
