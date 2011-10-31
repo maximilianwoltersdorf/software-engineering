@@ -8,7 +8,6 @@ SoftwareProject::Application.routes.draw do
 
   root :to            => 'pages#index'
   match 'about'       => 'pages#about'
-
   match 'user/new'    => 'user#new'
   match 'user/create' => 'user#create'
   match 'game/index'  => 'game#index'
