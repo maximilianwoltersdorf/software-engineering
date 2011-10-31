@@ -19,6 +19,7 @@
 	</div>
 
 	Games Played: 
+	<% current_facebook_user.fetch %>
 	<% @played_games = Game.find_by_user_name(current_facebook_user.name).all %>
 	<% if @played_games != nil %>
 	<%= @played_games.count %>
