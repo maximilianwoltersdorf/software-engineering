@@ -11,7 +11,7 @@ class UserController < ApplicationController
 								:birthday => current_facebook_user.birthday,
 								:email => current_facebook_user.email,
 								:fb_id => current_facebook_user.id)
-			cookies.permanent[:user_name] = @user.name
+			#cookies.permanent[:user_name] = @user.name
 			session[:user_name] = @user.name
 			redirect_to '/user/create'
 		end
