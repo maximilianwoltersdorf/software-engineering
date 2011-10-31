@@ -21,7 +21,8 @@ class UserController < ApplicationController
 
 	def create
 		current_facebook_user.likes.each do |item|
-			if Like.find(item.name)
+			if Like.find_by_group(item.name)
+
 			else
 			Like.create(:group => item.name,
 						:count => "0")
