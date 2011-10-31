@@ -20,6 +20,7 @@ class UserController < ApplicationController
 	end
 
 	def create
+		current_facebook_user.fetch
 		current_facebook_user.likes.each do |item|
 			if Like.find_by_group(item.name)
 			else
