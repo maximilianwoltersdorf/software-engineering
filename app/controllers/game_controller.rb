@@ -18,7 +18,7 @@ class GameController < ApplicationController
     current_facebook_user.fetch
 
     current_facebook_user.likes.each do |item|
-    @user_like = Like.find_by_name(item.name)
+    @user_like = Like.find_by_group(item.name)
     end
 
   end 
