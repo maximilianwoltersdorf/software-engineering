@@ -1,9 +1,10 @@
 <h1>Deine Interessen: </h1>
 <table>
+<% @user_like.each do |like| %>
 <tr>
 <td><%= @user_like.group%></td>
 <td><%= @user_like.count %></td>
 </tr>
-
+<% end %>
 
 </table>
