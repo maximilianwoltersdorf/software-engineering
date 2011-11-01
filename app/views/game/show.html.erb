@@ -1,9 +1,10 @@
 <h1>Deine Interessen: </h1>
 <table>
 <% @user_likes.each do |like| %>
+<% @like = Like.find_by_group(like.name) %>
 <tr>
-<td><%= like.group %></td>
-<td><%= like.count %></td>
+<td><%= @like.group %></td>
+<td><%= @like.name %></td>
 </tr>
 <% end %>
 
