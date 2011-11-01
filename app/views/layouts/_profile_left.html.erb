@@ -11,7 +11,7 @@
 				
 		</p>
 		<p>
-	</div>
+	
 	<div id = "profilepic">
 				<%= image_tag("http://graph.facebook.com/#{current_facebook_user.id}/picture", :size=> "80x80")%>
 			<% end %>
@@ -27,4 +27,6 @@
 	<%= 0 %>
 	<% end %>
 
+	<%= link_to "Aktualisiere deine Interessen!", '/user/create' %>
+	</div>
 </div>
