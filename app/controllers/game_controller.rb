@@ -17,10 +17,8 @@ class GameController < ApplicationController
   def show
     current_facebook_user.fetch
 
-    current_facebook_user.likes.each do |item|
-    #@user_like = Like.find_by_group(item.name).order("count DESC")
     @user_like = Like.where("group == #{item.name}")
-    end
+    
 
   end 
 
