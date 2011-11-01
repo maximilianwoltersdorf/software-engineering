@@ -13,6 +13,7 @@ SoftwareProject::Application.routes.draw do
   match 'game/index'  => 'game#index'
   match 'user/create' => 'user#create'
   match 'game_create' => 'game#create'
+  match 'game_show'   => 'game#show'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
