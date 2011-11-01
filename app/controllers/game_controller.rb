@@ -16,10 +16,6 @@ class GameController < ApplicationController
 
   def show
     current_facebook_user.fetch
-    
-  end
-
-    
 
   end 
 
