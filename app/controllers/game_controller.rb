@@ -14,6 +14,11 @@ class GameController < ApplicationController
   def new
   end
 
+  def show
+    current_facebook_user.fetch
+    @user_likes = Like.find_by_group(current_facebook_user.likes)
+  end 
+
   def create
 
     current_facebook_user.fetch
