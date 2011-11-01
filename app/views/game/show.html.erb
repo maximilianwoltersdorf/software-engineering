@@ -1,7 +1,7 @@
 <h1>Deine Interessen: </h1>
 <table>
 <% current_facebook_user.likes.each do |item| %>
-<% @user_like = Like.find_by_group(item.name) %>
+<% @user_like = Like.find_by_group(item.name).order("count DESC") %>
 <tr>
 <td><%= @user_like.group%></td>
 <td><%= @user_like.count %></td>
