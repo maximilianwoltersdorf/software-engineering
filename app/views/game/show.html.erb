@@ -1,7 +1,7 @@
 <h1>Deine Interessen: </h1>
 <table>
 <% @user_likes.each do |like| %>
-<% @like = Like.find_by_group(like.name) %>
+<% @like = Like.find_by_group(like) %>
 <tr>
 <td><%= @like.group %></td>
 <td><%= @like.name %></td>
