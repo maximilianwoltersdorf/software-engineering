@@ -16,8 +16,7 @@ class GameController < ApplicationController
 
   def show
     current_facebook_user.fetch
-    current_facebook_user.likes.each do |item|
-    @user_like[] = item.name
+    
   end
 
     
