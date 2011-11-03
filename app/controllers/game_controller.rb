@@ -1,5 +1,6 @@
 class GameController < ApplicationController
 	require 'mogli'
+
   def index
   	size = Like.count
 		@like1 = Like.find(1+rand(size-1))
@@ -16,14 +17,14 @@ class GameController < ApplicationController
 
   def show
    current_facebook_user.fetch
-   fbuser_likes   = current_facebook_user.likes
-   @user_likes    = Hash.new
+   
+  @user_votes =  current_facebook_user.likes
+  @user_likes = Like.where(:group => @user_votes).sort_by('count DESC')
       
-    fbuser_likes.each do |like|
-      @user_likes["#{like.name}"] = Like.find_by_group(like.name).count
-    end
+    
 
-    #@user_like
+
+    #@user_likes
 
   end 
 
