@@ -16,6 +16,7 @@ class GameController < ApplicationController
 
   def show
     current_facebook_user.fetch
+    @userlikes = current_facebook_user.likes
 
   end 
 
