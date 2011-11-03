@@ -1,8 +1,9 @@
 <div id = 'content_pages'>
 <h1>Deine Interessen: </h1>
 <table>
+<% @user_likes.each do |item| %>
 <tr>
-<td><%= @user_likes%></td>
+<td><%= item %></td>
 </tr>
 </table>
 </div>
