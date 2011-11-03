@@ -1,9 +1,9 @@
 <div id = 'content_pages'>
 <h1>Deine Interessen: </h1>
 <table>
-<% @user_likes.sort.each do |item| %>
+<% @user_likes.each do |item| %>
 <tr>
-<td><%= item %></td>
+<td><%= item.name %></td>
 </tr>
 <% end %>
 </table>
