@@ -1,8 +1,6 @@
 <div id = 'content_pages'>
 <h1>Deine Interessen: </h1>
 <table>
-<% @userlikes.each do |item| %>
-<% @user_like = Like.find_by_group(item.name, :order =>"count") %>
 <tr>
 <td><%= @user_like.group%></td>
 <td><%= @user_like.count %></td>

@@ -15,8 +15,17 @@ class GameController < ApplicationController
   end
 
   def show
-    current_facebook_user.fetch
-    @userlikes = current_facebook_user.likes
+   fbuser       = current_facebook_user.fetch
+   alllikes     = Hash.new
+      
+    fbuser.likes.each do |like|
+      alllikes[like.name] = Like.find_by_group(like.name).count
+    end
+
+    @user_likes = allikes.all.order('created_at DESC').take(10)
+      
+    
+    #@user_like
 
   end 
 
