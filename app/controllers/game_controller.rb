@@ -22,7 +22,7 @@ class GameController < ApplicationController
       alllikes[like.name] = Like.find_by_group(like.name).count
     end
 
-    @user_likes = allikes.all.order('created_at DESC').take(10)
+    @user_likes = alllikes.all.order('created_at DESC').take(10)
       
     
     #@user_like
