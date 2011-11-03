@@ -18,8 +18,8 @@ class GameController < ApplicationController
   def show
    current_facebook_user.fetch
    
-  @user_votes =  current_facebook_user.likes.name
-  @user_likes = Like.where(:group => @user_votes).sort_by('count DESC')
+  @user_votes =  current_facebook_user.likes
+  @user_likes = Like.where(:group => @user_votes.name).sort_by('count DESC')
       
     
 
