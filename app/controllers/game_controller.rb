@@ -20,8 +20,9 @@ class GameController < ApplicationController
    @user_likes     = Hash.new
       
     fbuser_likes.each do |like|
-      @user_likes["#{like.name}"].sort = Like.find_by_group(like.name).count
+      @user_likes["#{like.name}"] = Like.find_by_group(like.name).count
     end
+    @user_likes.sort!
     
 
       
