@@ -5,7 +5,7 @@
 	<% link_to "Skip", '/game/index' %>
 	<% current_facebook_user.fetch %>
 	<%= current_facebook_user.id %>
-	<%= fb_profile_pic(current_facebook_user.id, {:size => 'square' }) %>
+	<%= fb_profile_pic(current_facebook_user.id :size => 'square' ) %>
 
 
 	
