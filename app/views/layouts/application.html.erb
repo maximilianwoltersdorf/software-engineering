@@ -3,12 +3,13 @@
 <head>
   <title>SoftwareProject</title>
   <%= stylesheet_link_tag :application %>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
  
 </head>
 <body>
 	
-  		<%= render 'layouts/navitop' %>
-  		<%= render 'layouts/profile_left' %>
+  		<% render 'layouts/navitop' %>
+  		<% render 'layouts/profile_left' %>
   		<%= yield %>
 
 </body>
