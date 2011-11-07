@@ -7,10 +7,17 @@
  
 </head>
 <body>
-	
+	<div class="container-fluid">
+<div class="sidebar">
+	<%= render 'layouts/profile_left' %>
+</div>
+<div class="content">
+	<%= yield %>
+</div>
+</div>
   		<% render 'layouts/navitop' %>
-  		<% render 'layouts/profile_left' %>
-  		<%= yield %>
+  		
+  		
 
 </body>
 </html>
