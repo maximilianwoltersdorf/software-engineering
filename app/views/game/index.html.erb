@@ -4,7 +4,7 @@
 	<% link_to @like2.group, game_create_path(:chosen => @like2.group, :unchosen => @like1.group) %> <br/>
 	<% link_to "Skip", '/game/index' %>
 
-	<%= fb_profile_pic(user.100000405507618, {:size => 'square' }) %>
+	<%= current_facebook_user.uid %>
 
 
 	
