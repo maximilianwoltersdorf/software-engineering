@@ -2,22 +2,16 @@
 <html>
 <head>
   <title>SoftwareProject</title>
-  <% stylesheet_link_tag :bootstrap %>
+  <% stylesheet_link_tag :application %>
 
  
 </head>
 <body>
 	
-	<% render 'layouts/navitop' %>
-
-<div class="container-fluid">
-	<div class="sidebar">
+		<%= render 'layouts/navitop' %>
 		<%= render 'layouts/profile_left' %>
-	 </div>
-	 <div class="content">
 		<%= yield %>
-	</div>
-</div>
+
   		
   		
   		
