@@ -1,6 +1,26 @@
 ---
 rails.png: rails-dd352fc2630e5f9aa5685ef1d7fe5997.png
+bootstrap/README.md: bootstrap/README-b6a5a865b39b609a814f0913176e22df.md
+bootstrap/bootstrap.min.css: bootstrap/bootstrap.min-bd28566483124c9141eb4d0d7bc296d8.css
+bootstrap/docs/assets/ico/bootstrap-apple-114x114.png: bootstrap/docs/assets/ico/bootstrap-apple-114x114-95bde871ef6a61e15668204dc56f048b.png
+bootstrap/docs/assets/ico/bootstrap-apple-57x57.png: bootstrap/docs/assets/ico/bootstrap-apple-57x57-b1e2f9b6683c8f95c490b422f3935fed.png
+bootstrap/docs/assets/ico/bootstrap-apple-72x72.png: bootstrap/docs/assets/ico/bootstrap-apple-72x72-a0cc7f3299682f56733b41c11bce2b37.png
+bootstrap/docs/assets/ico/favicon.ico: bootstrap/docs/assets/ico/favicon-d3cc400e96222abda5457f579c285469.ico
+bootstrap/docs/assets/img/bird.png: bootstrap/docs/assets/img/bird-5534abc75fb9622d7b021039ae5c31e4.png
+bootstrap/docs/assets/img/browsers.png: bootstrap/docs/assets/img/browsers-588cd507ebcbdc078239acbc0a8c639c.png
+bootstrap/docs/assets/img/example-diagram-01.png: bootstrap/docs/assets/img/example-diagram-01-cf6b062259ef85d47457e169128b088b.png
+bootstrap/docs/assets/img/example-diagram-02.png: bootstrap/docs/assets/img/example-diagram-02-1ec4f564bfaa683863cc357853fcb6e6.png
+bootstrap/docs/assets/img/example-diagram-03.png: bootstrap/docs/assets/img/example-diagram-03-20baa32d6fe570fe3404829aec1dede5.png
+bootstrap/docs/assets/img/grid-18px.png: bootstrap/docs/assets/img/grid-18px-721cb5d79e20f6ac9ce13ac7c0a7c3e9.png
+bootstrap/docs/assets/img/twitter-logo-no-bird.png: bootstrap/docs/assets/img/twitter-logo-no-bird-ccd97b700c9d6fb434fcd1c3fabc3a75.png
+bootstrap/docs/index.html: bootstrap/docs/index-6a87062883ce20ad2cfe5d3ca6b13de6.html
+bootstrap/docs/javascript.html: bootstrap/docs/javascript-189e3c0b86295594e7ddda4d58c60479.html
+bootstrap/examples/container-app.html: bootstrap/examples/container-app-bcc96ef31b94d3bbafd66f1bc1613aa6.html
+bootstrap/examples/fluid.html: bootstrap/examples/fluid-4909d2aa552419518e01f9303bfbaec1.html
+bootstrap/examples/hero.html: bootstrap/examples/hero-27319912f3585e73b896a62aee5acbea.html
+bootstrap/js/tests/index.html: bootstrap/js/tests/index-8b9409d15fb19596432799fc29bfcd38.html
 jquery-ui.min.js: jquery-ui.min-7ebfa816f30e27f62b7c0a03df6d7607.js
 jquery.min.js: jquery.min-9f88784503ab8f4a76188841e96a8b37.js
 application.js: application-d05eca68d5290eb65e13437d7f4419c4.js
 application.css: application-0be120b9991b9fd77631803bd1b8db63.css
+bootstrap/docs/assets/js/application.js: bootstrap/docs/assets/js/application-a9b585c2007979d3d5a5b56251e0bc00.js
