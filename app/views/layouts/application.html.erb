@@ -8,14 +8,15 @@
  
 </head>
 <body>
-	
-		<%= render 'layouts/navitop' %>
+	<%= render 'layouts/navitop' %>
+	<div class="sidebar">
 		<%= render 'layouts/profile_left' %>
+	</div>
+	<div class = "content">
 		<%= yield %>
-
-  		
-  		
-  		
+	</div>
+		
+	
 
 </body>
 </html>
